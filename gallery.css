@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+body {
+    background-color: rgba(116, 243, 171, 0.889);
+    margin-left: 100px;
+}
+
+.headingOne {
+    text-align: center;
+    font-size: 30px;
+    color: red; 
+    margin-bottom: 20px; 
+}
+
+
+.smallImageList ul li {
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s; 
+    position: relative;
+    display: inline-block; 
+    text-decoration: none;
+    margin-right: 12px;
+    
+}
+
+.smallImageList ul li:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5); 
+    z-index: 2;
+}
+
+.active {
+    filter: none;
+}
